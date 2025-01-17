@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="90" fill="#4F46E5" />
+
+    <!-- Team figures outer ring - representing different teams -->
+    <g id="team-figures">
+        <!-- Figure 1 -->
+        <circle cx="100" cy="30" r="12" fill="#ffffff" />
+        <path d="M88 50 L112 50 L100 65 Z" fill="#ffffff" />
+
+        <!-- Figure 2 -->
+        <circle cx="155" cy="75" r="12" fill="#ffffff" />
+        <path d="M143 95 L167 95 L155 110 Z" fill="#ffffff" />
+
+        <!-- Figure 3 -->
+        <circle cx="155" cy="125" r="12" fill="#ffffff" />
+        <path d="M143 145 L167 145 L155 160 Z" fill="#ffffff" />
+
+        <!-- Figure 4 -->
+        <circle cx="100" cy="170" r="12" fill="#ffffff" />
+        <path d="M88 190 L112 190 L100 175 Z" fill="#ffffff" transform="rotate(180 100 182.5)" />
+
+        <!-- Figure 5 -->
+        <circle cx="45" cy="125" r="12" fill="#ffffff" />
+        <path d="M33 145 L57 145 L45 160 Z" fill="#ffffff" />
+
+        <!-- Figure 6 -->
+        <circle cx="45" cy="75" r="12" fill="#ffffff" />
+        <path d="M33 95 L57 95 L45 110 Z" fill="#ffffff" />
+    </g>
+
+    <!-- Central rotating arrows -->
+    <g id="arrows" fill="#ffffff">
+        <path d="M85 85 L100 70 L115 85 L107 85 L107 95 L93 95 L93 85 Z">
+            <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="0 100 100"
+                    to="360 100 100"
+                    dur="3s"
+                    repeatCount="indefinite"
+            />
+        </path>
+        <path d="M85 115 L100 130 L115 115 L107 115 L107 105 L93 105 L93 115 Z">
+            <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="0 100 100"
+                    to="360 100 100"
+                    dur="3s"
+                    repeatCount="indefinite"
+            />
+        </path>
+    </g>
+
+    <!-- Inner connecting lines -->
+    <g stroke="#ffffff" stroke-width="2" opacity="0.3">
+        <line x1="100" y1="42" x2="100" y2="158" />
+        <line x1="57" y1="75" x2="143" y2="125" />
+        <line x1="57" y1="125" x2="143" y2="75" />
+    </g>
+</svg>
