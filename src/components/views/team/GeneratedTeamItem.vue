@@ -7,7 +7,7 @@
       </div>
     </div>
     <div>
-      <button @click="$router.push('/group/'+data.id)" class="flex hover:bg-indigo-500 hover:text-white p-2 px-4 transition-all transition-duration-300 rounded-xl gap-2" title="" label="">
+      <button @click="$router.push('/group/'+data.uuid)" class="flex hover:bg-indigo-500 hover:text-white p-2 px-4 transition-all transition-duration-300 rounded-xl gap-2" title="" label="">
         <span>View</span>
         <EyeIcon></EyeIcon>
       </button>
